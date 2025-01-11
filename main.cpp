@@ -69,7 +69,7 @@ void SendDirection()
 
 	sprintf(szData, "--%d--", g_direction);
 	szData[0] = 0x02;
-	szData[1] = 0x12;
+	szData[1] = 0x20;
 	szData[3] = 0x00;
 	szData[4] = 0x03;
 
