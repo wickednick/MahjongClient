@@ -58,7 +58,7 @@ const char g_usbDevice[] = "/dev/ttyUSB0";
 void InitializeData()
 {
 	g_mapScore[EAST] = 1;
-	g_mapScore[NORTH] = 2;
+	g_mapScore[SOUTH] = 2;
 	g_mapScore[WEST] = 3;
 	g_mapScore[NORTH] = 4;
 }
@@ -177,7 +177,7 @@ bool ConnectSerial()
 void ReadDirection()
 {
 	char data;
-	std::ifstream file("direction.cfg");
+	std::ifstream file("/home/nick/mahjong/direction.cfg");
 	data = (char)file.get();
 	file.close();
 
